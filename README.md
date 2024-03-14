@@ -1,26 +1,4 @@
-## Add this line to your manifest ROM before ```repo sync```:
-
-Sepolicy line:
-```
-  <project path="device/qcom/sepolicy_vndr/sm6225" name="Xiaomi-SD685-Devs/device_qcom_sepolicy_vndr" remote="github" revision="lineage-21.0-caf-sm6225" />
-```
-hardware/qcom-caf/common line:
-```
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
-```
-
-HALs line:
-```
-  <project path="hardware/qcom-caf/sm6225/audio/agm" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_agm" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/audio/pal" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_arpal" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="Xiaomi-SD685-Devs/hardware_qcom_audio" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/dataipa" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_dataipa" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/display" name="Xiaomi-SD685-Devs/hardware_qcom_display" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/media" name="Xiaomi-SD685-Devs/hardware_qcom_media" remote="github" revision="lineage-21.0-caf-sm6225" />
-```
+## Adaptation
 
 Adapt new platform to your BoardConfigQcom.mk ROM:
 - https://github.com/Xiaomi-SD685-Devs/hardware_qcom-caf_common/commit/b682c8d6a2a1794ba74ac4529f5dc61aba1f7ced
@@ -35,6 +13,19 @@ Adapt new platform to your BoardConfigQcom.mk ROM:
 
 - https://github.com/Xiaomi-SD685-Devs/hardware_qcom-caf_common/commit/d88b407057a85135bc236d7222dcc143d830fd9d
 
-Clone device tree to your initialize repo,done!!
+## Setup topaz for AOSP-Quack based rom
 
-Compile Now!!
+* Download supported sources (LineageOS, AOSCP, RR, etc...) (this source is suited best for EvolutionX and AEX, you will have to modify it for other ROMs)
+* Once this is downloaded, clone this repo to .repo/local_manifests then sync again
+* Run . build/envsetup.sh
+* Launch your build (brunch aosp_topaz-userdebug, aosp can change depending on the target rom)
+
+## Credits
+
+2024 Omar <omarcoptan9@gmail.com><br>
+@boedhack99 for base trees
+
+## Contact
+
+* If you want talk to me, here is my telegram: https://t.me/AlCoptan99
+* If you *really* feel like donating, you can do so here: https://linktr.ee/Coptan

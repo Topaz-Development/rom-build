@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    * target: topaz
+    * rom: EvoX :3
+    -->
+    <!-- Remote -->
+    <remote fetch="https://github.com/Topaz-Development" name="org" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/topaz" name="device_xiaomi_topaz" remote="org" revision="udc" />
+
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/topaz" name="vendor_xiaomi_topaz" remote="org" revision="udc" />
+
+    <!-- Kernel -->
+    <project path="device/xiaomi/topaz-kernel" name="device_xiaomi_topaz-kernel" remote="org" revision="udc" />
+
+    <!-- Sepolicy -->
+    <project path="device/qcom/sepolicy_vndr/sm6225" name="Topaz-Development/device_qcom_sepolicy_vndr" remote="github" revision="lineage-21.0-caf-sm6225" />
+
+    <!-- Hals -->
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
+    <project path="hardware/qcom-caf/sm6225/audio/agm" name="vendor_qcom_opensource_agm" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/qcom-caf/sm6225/audio/pal" name="vendor_qcom_opensource_arpal" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="hardware_qcom_audio" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/qcom-caf/sm6225/dataipa" name="vendor_qcom_opensource_dataipa" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/qcom-caf/sm6225/media" name="hardware_qcom_media" remote="org" revision="lineage-21.0-caf-sm6225" />
+</manifest>
