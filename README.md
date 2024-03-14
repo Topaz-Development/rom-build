@@ -2,7 +2,7 @@
 
 Sepolicy line:
 ```
-  <project path="device/qcom/sepolicy_vndr/sm6225" name="Xiaomi-SD685-Devs/device_qcom_sepolicy_vndr" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="device/qcom/sepolicy_vndr/sm6225" name="Topaz-Development/device_qcom_sepolicy_vndr" remote="github" revision="lineage-21.0-caf-sm6225" />
 ```
 hardware/qcom-caf/common line:
 ```
@@ -13,13 +13,13 @@ hardware/qcom-caf/common line:
 
 HALs line:
 ```
-  <project path="hardware/qcom-caf/sm6225/audio/agm" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_agm" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/audio/pal" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_arpal" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="Xiaomi-SD685-Devs/hardware_qcom_audio" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/dataipa" name="Xiaomi-SD685-Devs/vendor_qcom_opensource_dataipa" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/display" name="Xiaomi-SD685-Devs/hardware_qcom_display" remote="github" revision="lineage-21.0-caf-sm6225" />
-  <project path="hardware/qcom-caf/sm6225/media" name="Xiaomi-SD685-Devs/hardware_qcom_media" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/audio/agm" name="Topaz-Development/vendor_qcom_opensource_agm" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/audio/pal" name="Topaz-Development/vendor_qcom_opensource_arpal" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="Topaz-Development/hardware_qcom_audio" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="Topaz-Development/vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/dataipa" name="Topaz-Development/vendor_qcom_opensource_dataipa" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/display" name="Topaz-Development/hardware_qcom_display" remote="github" revision="lineage-21.0-caf-sm6225" />
+  <project path="hardware/qcom-caf/sm6225/media" name="Topaz-Development/hardware_qcom_media" remote="github" revision="lineage-21.0-caf-sm6225" />
 ```
 
 Adapt new platform to your BoardConfigQcom.mk ROM:
