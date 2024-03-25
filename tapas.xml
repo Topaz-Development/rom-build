@@ -8,7 +8,7 @@
     <remote fetch="https://github.com/Topaz-Development" name="org" />
 
     <!-- Device -->
-    <project path="device/xiaomi/topaz" name="device_xiaomi_topaz" remote="org" revision="blaze" />
+    <project path="device/xiaomi/topaz" name="device_xiaomi_topaz" remote="org" revision="lineage-21" />
 
     <!-- Vendor -->
     <project path="vendor/xiaomi/topaz" name="vendor_xiaomi_topaz" remote="org" revision="udc" />
