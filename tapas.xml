@@ -30,4 +30,5 @@
     <project path="hardware/qcom-caf/sm6225/dataipa" name="vendor_qcom_opensource_dataipa" remote="org" revision="lineage-21.0-caf-sm6225" />
     <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" remote="org" revision="lineage-21.0-caf-sm6225" />
     <project path="hardware/qcom-caf/sm6225/media" name="hardware_qcom_media" remote="org" revision="lineage-21.0-caf-sm6225" />
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="org" revision="lineage-21" />
 </manifest>
