@@ -8,7 +8,7 @@
     <remote fetch="https://github.com/Topaz-Development" name="org" />
 
     <!-- Device -->
-    <project path="device/xiaomi/topaz" name="device_xiaomi_topaz" remote="org" revision="los" />
+    <project path="device/xiaomi/topaz" name="device_xiaomi_topaz" remote="org" revision="udc" />
 
     <!-- Vendor -->
     <project path="vendor/xiaomi/topaz" name="vendor_xiaomi_topaz" remote="org" revision="udc" />
@@ -18,6 +18,10 @@
 
     <!-- Sepolicy -->
     <project path="device/qcom/sepolicy_vndr/sm6225" name="Topaz-Development/device_qcom_sepolicy_vndr" remote="github" revision="lineage-21.0-caf-sm6225" />
+
+    <!-- Custom -->
+    <remove-project path="hardware/qcom-caf/common" />
+    <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="org" revision="lineage-21.0-sm6225" />
 
     <!-- Hals -->
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
